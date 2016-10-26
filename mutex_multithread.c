@@ -39,7 +39,7 @@ int main(int argc, char const *argv[])
     for( index = 0; index < count; index++ )
     {
         indexs[ index ] = index;
-        if( ( state = pthread_create( &myPhtread[index], &attr, calculate, ( void *)&indexs[index] ) ) != 0)
+        if( ( state = pthread_create( &myPhtread[index], &attr, calculate, ( void *)&indexs[index] ) ) != 0 )
             printf("pthread_create error !\n");
     }
     
