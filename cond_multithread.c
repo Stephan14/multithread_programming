@@ -10,6 +10,7 @@ int begin = 0, end = 0, counter = 0, max = 4;
 void *producer( void *arg ){
   printf("pthread producer id : %d run \n", *(int *) arg );
   srand(1);
+
   while( 1 )
   {
     pthread_mutex_lock( &mutex );//一定要加锁
